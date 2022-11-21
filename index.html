@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 
-    <title>Portifolio-JoaoPedroBarbosa</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/scrollbar.css">
+
+  <title>Meu Portifolio</title>
 </head>
+
 <body>
-    <main class="cartao">
-        <div class="minhas-informacoes">
-          <img src="./src/imagens/perfil-temp.jpg" alt="foto de perfil" />
-          <h1 class="nome">Joao Pedro Barbosa</h1>
-          <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
-        </div>
-  
-        <div class="conteudo">
-          <ul class="abas">
-            <li class="aba selecionado" >
-              <img src="./src/imagens/loading-icon.gif" alt="sobre mim" />
-            </li>
-            <li class="aba" >
-              <img src="./src/imagens/sobre.gif" alt="redes sociais" />
-            </li>
-          </ul>
-  
-          <div class="informacoes-abas">
-            <div class="informacao selecionado" >
-              <h3 class="sub-titulo">Sobre</h3>
-  
-              <div class="descricao">
-                <p>Oi! meu nome é Joao Pedro Barbosa, seja bem-vindo(a)!</p>
-  
-                <p>
-                 Sou uma pessoa apaixonada pela área de informática desde que eu tinha 15 anos. 
-                 Sempre tive o sonho de trabalhar nesse meio, me especializei,  como técnico em manutenção de hardware e software, 
-                 e mais atualmente comecei a estudar programação, colocando toda minha paixão em prática, comecei estudando <span> HTML,CSS e JavaScript </span> ,me tornando um programador júnior. 
-                 Gosto muito de café (até demais), e meus principais passatempos são jogar jogos indie, ler livros, mangás, webtoons e ver séries.
-                </p>
-              </div>
-            </div>
-  
-            <div class="informacao" >
-              <h3 class="sub-titulo">Minhas redes</h3>
-  
-              <ul class="redes-sociais">
-                  <li>
-                      <a href="" target="_blank" class="curriculo">Currículo</a>
-                  </li>
-                  <li>
-                      <a href="" target="_blank" class="linkedin">LinkedIn</a>
-                  </li>
-                  <li>
-                      <a href="" target="_blank" class="github">GitHub</a>
-                  </li>
-              </ul>
-            </div>
-  
+  <main class="cartao">
+    <div class="minhas-informacoes">
+      <img src="./src/imagens/foto-perfil.jpg" alt="foto de perfil" />
+      <h1 class="nome">Joao Pedro Barbosa</h1>
+      <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
+    </div>
+
+    <div class="conteudo">
+      <ul class="abas">
+        <li class="aba selecionado" id="sobre-mim">
+          <img src="./src/imagens/loading-icon.gif" alt="ícone de sobre mim" />
+        </li>
+        <li class="aba" id="minhas-redes">
+          <img src="./src/imagens/sobre.gif" alt="ícone de redes sociais" />
+        </li>
+      </ul>
+
+      <div class="informacoes-abas">
+        <div class="informacao selecionado" id="informacao-sobre-mim">
+          <h3 class="sub-titulo">Sobre</h3>
+
+          <div class="descricao">
+            <p>Oi! meu nome é Joao Pedro Barbosa, seja bem-vindo(a)!</p>
+
+            <p>
+              Sou uma pessoa apaixonada pela área de informática desde que eu tinha 15 anos.
+              Sempre tive o sonho de trabalhar nesse meio, me especializei, como técnico em manutenção de hardware e
+              software,
+              e mais atualmente comecei a estudar programação, colocando toda minha paixão em prática, comecei estudando
+              <span> HTML,CSS e JavaScript </span> ,me tornando um programador júnior.
+              Gosto muito de café (até demais), e meus principais passatempos são jogar jogos indie, ler livros, mangás,
+              webtoons e ver séries.
+            </p>
           </div>
         </div>
-      </main>
-  
+
+        <div class="informacoes-abas">
+          <div class="informacao" id="informacao-minhas-redes">
+            <h3 class="sub-titulo">Minhas redes</h3>
+
+            <ul class="redes-sociais">
+              <li>
+                <a href="https://docs.google.com/document/d/1TkM6qC5Ec94GIfClmsVcbzaD6U8t73Xr/edit?usp=sharing&ouid=112952137828475174003&rtpof=true&sd=true" target="_blank" class="curriculo"><i class="fa-solid fa-file"></i> Currículo</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-silva-677452239/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/TioMoon" target="_blank" class="github"><i class="fa-brands fa-github"></i> GitHub</a>
+              </li>
+              <li>
+                <a href="https://wa.me/5521969075905" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="./src/js/index.js"></script>
 </body>
+
 </html>
